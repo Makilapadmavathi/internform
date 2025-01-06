@@ -1,0 +1,276 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styling */
+  .form-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Section Styling */
+  .section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  
+  .section-title {
+    background-color: #cce0ff;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    border-radius: 4px;
+  }
+  
+  /* Input Row Styling */
+  .section-content .input-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .input-row label {
+    flex: 1;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .input-row input {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .declaration-section {
+    padding: 20px;
+  }
+  
+  .declaration-fields {
+    margin-top: 20px;
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input-column {
+    flex: 1;
+    margin-right: 10px; /* Optional: Add some space between columns */
+  }
+  
+  .input-column:last-child {
+    margin-right: 0; /* Remove margin for the last column */
+  }
+  
+  input[type="date"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Layout Adjustments */
+  @media (min-width: 1024px) {
+    /* On large screens, increase font size and spacing for readability */
+    .form-container {
+      padding: 30px;
+    }
+  
+    .form-title {
+      font-size: 28px;
+    }
+  
+    .section-title {
+      font-size: 20px;
+      padding: 12px;
+    }
+  
+    .input-row label {
+      font-size: 16px;
+    }
+  
+    .input-row input {
+      font-size: 16px;
+    }
+  }
+  
+  /* For desktop view, make the form two-column */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .section-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .input-row {
+      width: calc(50% - 10px); /* Each row takes half width, creating a two-column layout */
+      display: flex;
+    }
+  
+    .input-row input,
+    .input-row label {
+      width: 100%; /* Make input and label take full width in their flex container */
+    }
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  td input {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Declaration Section */
+  .declaration-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .declaration-section input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 767px) {
+    /* Stack fields vertically */
+    .section-content,
+    .input-row {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .input-row label,
+    .input-row input {
+      width: 100%;
+    }
+  
+    /* Horizontal scrolling for tables */
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  /* Container styling */
+.terms-container {
+  max-width: 1500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #def1fa;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Left-align text within the container */
+}
+
+/* Main heading styling */
+.terms-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* Center-align heading only */
+  margin-bottom: 20px;
+}
+
+/* General paragraph text styling */
+.terms-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* List styling */
+.terms-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.terms-container ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #555;
+  text-align: left; /* Ensure list items are left-aligned */
+  padding-left: 10px; /* Indent for better readability */
+}
+
+/* Emphasis for key terms */
+.terms-container strong {
+  color: #007bff; /* Highlight key terms in primary color */
+  font-weight: 600;
+}
+
+/* Styling for phone number */
+.terms-container .phone-number {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Hover effect for list items */
+.terms-container ul li:hover {
+  background-color: #f1f1f1;
+  color:rgb(26, 97, 11);
+  border-left: 3px solid #007bff;
+  padding-left: 15px;
+  transition: 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 15px;
+  }
+
+  .terms-container h2 {
+    font-size: 20px;
+  }
+
+  .terms-container p, .terms-container ul li {
+    font-size: 14px;
+  }
+}
